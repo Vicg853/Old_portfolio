@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Fjalla+One|Oswald:500|Yellowtail&display=swap');
+/*
+font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Yellowtail', cursive;
+matte black color: rgb(20, 20, 20)
+yankees blue color: #1c2841
+*/
+*{
+    outline: none !important;
+}
+button:hover, a:hover, select:hover{
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+html{
+    height: 100vh !important;
+}
+body, html{
+    margin: 0px !important;
+    background-color: #1c2841;
+    padding: 0px !important;
+}
+
+/*Main divs definition*/
+#headerCarrousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: inline-flex;
+}
+#PageContentMasterDiv{
+    width: 100vw;
+    background-color: transparent;
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    height: auto;
+}
+
+
+/*Page content*/
+#PageContent{
+    background-color: white;
+    z-index: 3;
+}
+.contents{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+    /*Home content*/
+#mainHomeContent{
+    width: 100vw;
+    display: inline-flex;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+#contentIntro{
+    height: 80vh;
+    display: inline-flex;
+    z-index: 1;
+    margin-left: 10vw;
+    position: absolute;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+#backgroundIntro{
+    width: 65vw;
+    height: 80vh;
+    margin-left: 35vw;
+}
+#backgroundIntro img{
+    width: auto;
+    height: 100%;
+}
+#fotoNextIntroTextDiv{
+    height: 60vh;
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.38);
+}
+#fotoNextIntroTextDiv img{
+    height: 100%;
+    width: auto;
+}
+#textDivIntro{
+    width: 30.5vw;
+    height: 60vh;
+    background-color: rgba(20, 20, 20, 1);
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.38);
+}
+#textDivIntro *{
+     margin: 30px;
+}
+#TitleContentHome{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+#introTextHomeContent, #SecondTextHomePage{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding-top: 15px;
+}
+#secondDivContentHomePage{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 1);
+}
+#HomeButtonSeeOtherPages{
+    font-family: 'Oswald', sans-serif;
+    width: 400px;
+    height: 60px;
+    background-color: rgba(20, 20, 20, 1);
+    border: 3px solid white;
+    transition: 0.5s;
+    color: white;
+}
+#HomeButtonSeeOtherPages:hover{
+    background-color: white;
+    transform: translateY(-5px);
+    color: rgba(20, 20, 20, 1);
+    cursor: pointer;
+}
+@media only screen and (max-width: 1229px){
+    #textDivIntro{
+        width: 45vw;
+    }
+    #textDivIntro *{
+        margin: 14px;
+   }
+   #contentIntro{
+        margin-left: 5vw;
+    }
+}
+@media only screen and (max-width: 850px){
+    #contentIntro{
+        margin-left: 2vw;
+    }
+}
+@media only screen and (max-width: 733px){
+    #contentIntro{
+        margin-left: 0vw;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #backgroundIntro{
+        opacity: 0;
+    }
+    #fotoNextIntroTextDiv{
+        height: 60vh;
+        width: 70vw;
+        box-shadow: none;
+    }
+    #fotoNextIntroTextDiv img{
+        height: auto;
+        width: 100%;
+    }
+    #textDivIntro{
+        width: 70vw;
+        height: auto;
+        background-color: rgba(20, 20, 20, 1);
+    }
+}
+@media only screen and (max-width: 450px){
+    #fotoNextIntroTextDiv{
+        height: 50vh;
+        width: 90vw;
+        box-shadow: none;
+    }
+    #textDivIntro{
+        width: 90vw;
+        height: auto;
+        background-color: rgba(20, 20, 20, 1);
+    }
+}
+    /*Projects content*/
+#ContentN1ProjectsPage{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../img/LRM_EXPORT_36739061811089_20191021_201321096.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#GradientBackgroundText{
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.1));
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#GradientBackgroundText span{
+    color: white;
+    width: 30vw;
+    height: 20vh;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+@media only screen and (max-width: 670px){
+    #GradientBackgroundText{
+        width: 60vw;
+    }
+    #GradientBackgroundText span{
+        width: 45vw;
+    }
+}
+#ContentN2ProjectsPage{
+    width: 100vw;
+    background-color: white;
+    color: rgba(20, 20, 20, 1);
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#IntroContent2ProjectsPage{
+    width: 77vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+#RealizedProjectsPageMasterDiv{
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+}
+#FirstCardRealizedProject, #SecondCardRealizedProject, #ThirdCardRealizedProject{
+    width: 30vw;
+    height: 250px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#FirstCardRealizedProject{
+    background-image: url(../img/zpn_project_img.jpg);
+}
+#SecondCardRealizedProject{
+    background-image: url(../img/cinqtoursImg.jpg);
+}
+#ThirdCardRealizedProject{
+    background-image: url(../img/img2Box.jpg);
+}
+#FirstCardRealizedProject:hover, #SecondCardRealizedProject:hover, #ThirdCardRealizedProject:hover{
+    transform: translateY(-6px);
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.65);
+}
+#FirstCardRealizedProject a, #SecondCardRealizedProject a, #ThirdCardRealizedProject a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-decoration-line: none;
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 5px;
+}
+#FirstCardRealizedProject a span, #SecondCardRealizedProject a span, #ThirdCardRealizedProject a span{
+    margin: 25px;
+    width: auto;
+    color: white;
+}
+@media only screen and (max-width: 770px){
+    #RealizedProjectsPageMasterDiv{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    #FirstCardRealizedProject, #SecondCardRealizedProject, #ThirdCardRealizedProject{
+        width: 90vw;
+        margin: 5vw;
+    }
+}
+#ContentN3ProjectsPage{
+    width: 100vw;
+    background-color: rgba(20, 20, 20, 1);
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+#TitleFutureProjects{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 80vw;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+#ProjectsTableDiv{
+    width: 80vw;
+    background-color: white;
+}
+    /*Contacts content*/
+#ContactContentMasterDiv{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+#ContactForm{
+    width: 70vw;
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 4px;
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.45);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+}
+#InnerContactForm{
+    width: 65vw;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+#InnerContactForm input{
+    width: 64vw;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: rgba(67, 66, 66, 0.199) solid 1px;
+    color: #4f596b;
+    background-color: white;
+    padding: 0.5vw;
+    margin-top: 15px;
+    font-size: 17px;
+}
+#MSGInputContactPage{
+    min-width: 64vw;
+    max-width: 64vw;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: rgba(67, 66, 66, 0.199) solid 1px;
+    color: #4f596b;
+    background-color: white;
+    padding: 0.5vw;
+    margin-top: 15px;
+    font-size: 17px;
+}
+#ButtonConfirmSubmission{
+    width: 65vw;
+    height: 50px;
+    background-color: rgba(20, 20, 20, 1);
+    color: white;
+    border: 3px solid white;
+    transition: 0.4s;
+    margin-top: 50px;
+}
+#ButtonConfirmSubmission:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.45);
+    background-color: white;
+    color: rgba(20, 20, 20, 1);
+}
+@media only screen and (max-width: 720px){
+    #ContactForm{
+        width: 100vw;
+        border-radius: 0px;
+    }
+    #InnerContactForm{
+        width: 90vw;
+    }
+    #InnerContactForm input, #MSGInputContactPage{
+        max-width: 89vw;
+        min-width: 89vw;
+    }
+    #ButtonConfirmSubmission{
+        width: 90vw;
+    }
+}
+
+/*Slider and header*/
+#headersSlider{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+}
+.slick-slide{
+    width: 100vw !important;
+    height: 100vh !important;
+}
+.slick-cloned{
+    opacity: 0 !important;
+}
+.headers{
+    width:100vw !important;
+    height: 100vh !important;
+    transition: 0.6s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+#header{
+    background-image: url(../img/backgrounHeader.jpg);
+}
+#header1{
+    background-image: url(../img/IMG_20191013_180658129_HDR.jpg);
+}
+#header2{
+    background-image: url(../img/IMG_20190912_183314449.jpg);
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:before,
+.slick-prev:before, .slick-next:before{
+    display: none !important;
+}
+#prevArrow{
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    z-index: 97;
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+#nextArrow{
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    z-index: 97;
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.slick-next, .slick-prev{
+    margin: 0px !important;
+    left: 0 !important;
+    right: auto !important;
+    position: unset !important;
+}
+.titleZomedIn{
+    opacity: 0;
+    transition: 0.6s;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+.HeaderTitle{
+    margin-top: 50vh;
+    margin-left: 22.5vw;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+}
+.HeaderSubtitle{
+    margin-left: 22.5vw;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+.titleZomedOut{
+    opacity: 0;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 6px;
+    background-color: transparent;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+}
+.titleZomedOut:hover{
+    background-color: rgba(20, 20, 20, 0.4);
+    text-decoration-line: underline;
+}
+.clickAreaHeader{
+    width: 30vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.clickAreaHeader:hover{
+    cursor: pointer;
+}
+
+/*Nav bar*/
+nav{
+    width: 100vw;
+    background: transparent;
+    font-family: 'Oswald', sans-serif;
+    display: inline-flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 98;
+    font-size: 30px;
+    transition: 0.5s;
+}
+#leftSideNav{
+    padding: 60px;
+    padding-left: 22.5vw;
+    width: 50vw;
+    color: white;
+    transition: 0.5s;
+}
+#rigthSideNav{
+    width: 50vw;
+    padding: 60px;
+    padding-right: 22.5vw;
+    display: inline-flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    transition: 0.5s;
+}
+#rigthSideNav button{
+    background-color: transparent !important;
+    border: 0px !important;
+}
+#MenuButton:hover{
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    width: 100vw;
+    display: inline-flex;
+    background-color: rgba(20, 20, 20, 1);
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.45);
+}
+.leftContentFooter, .rightContentFooter{
+    margin: 20px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 45vw;
+    height: 7vh;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.linkOtherPageFooter{
+    color: rgba(20, 20, 20, 0.6) !important;
+    text-decoration-line: underline;
+}
+@media only screen and (max-width: 730px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftContentFooter, .rightContentFooter{
+        width: 85vw;
+    }
+}
+
+/*Table*/
+div.ProjectsTable {
+    font-family: 'Oswald', sans-serif;
+  background-color: #141414;
+  width: 100%;
+  height: 250px;
+  text-align: left;
+}
+.divTable.ProjectsTable .divTableCell, .divTable.ProjectsTable .divTableHead {
+  border: 2px solid #FFFFFF;
+  padding: 7px 10px;
+}
+.divTable.ProjectsTable .divTableHeading {
+  background: #FFFFFF;
+  border-bottom: 1px solid #141414;
+}
+.divTable.ProjectsTable .divTableHeading .divTableHead {
+  font-size: 16px;
+  font-weight: bold;
+  color: #141414;
+}
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+.divTableRow {
+    color: white !important;
+}
+
+/*MSG succes or errors*/
+#Succes_ErrorMessages{
+    width: 65vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+#SuccesMSG{
+    color: greenyellow;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+}
+#ErrorIncompleteMSG, #ErrorMSG, #NonValidEmail{
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+}
+  

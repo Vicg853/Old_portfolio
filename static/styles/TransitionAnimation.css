@@ -1,0 +1,46 @@
+/*Headers zoming in and out*/
+.headersZommedOut{
+    transform: scale(0.6,0.6);
+    border-radius: 6px;
+}
+.headersZommedOut:hover{
+    transform: scale(0.6,0.6) translateY(-5px);
+    box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.38);
+}
+.headerZommingIn{
+    transform: scale(1,1) !important;
+}
+@media (orientation: portrait) {
+    .headersZommedOut{
+        transform: scale(0.6,0.6);
+    }
+}
+
+/*Content page*/
+.hidePageContent{
+    overflow-y: hidden;
+}
+
+/*Nav Bar*/
+.scrolled, .ZoomedOut{
+    background-color: rgb(20, 20, 20) !important;
+}
+.scrolled #leftSideNav, .ZoomedOut #leftSideNav{
+    padding: 33px !important;
+    padding-left: 18vw !important;
+}
+.scrolled #rigthSideNav, .ZoomedOut #rigthSideNav{
+    padding: 33px !important;
+    padding-right: 18vw !important;
+}
+
+/*Apear and desapear*/
+.appear{
+    opacity: 1 !important;
+}
+.desapear{
+    opacity: 0;
+}
+.desapearCompletly{
+    display: none !important;
+}
