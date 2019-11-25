@@ -66,21 +66,20 @@ body, html{
     overflow: hidden;
     height: auto;
     position: relative;
-}
-#contentIntro{
-    height: 80vh;
-    display: inline-flex;
-    z-index: 1;
-    margin-left: 10vw;
-    position: absolute;
-    justify-content: center;
-    justify-items: center;
     align-content: center;
     align-items: center;
 }
+#contentIntro{
+    width: max-content;
+    height: min-content;
+    display: flex;
+    z-index: 1;
+    margin-left: 10vw;
+    position: absolute;
+}
 #backgroundIntro{
     width: 65vw;
-    height: 80vh;
+    height: 90vh;
     margin-left: 35vw;
 }
 #backgroundIntro img{
@@ -88,7 +87,10 @@ body, html{
     height: 100%;
 }
 #fotoNextIntroTextDiv{
-    height: 60vh;
+    height: 100%;
+    position: absolute;
+    margin-left: 30.5vw;
+    top: 0;
     box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.38);
 }
 #fotoNextIntroTextDiv img{
@@ -97,7 +99,7 @@ body, html{
 }
 #textDivIntro{
     width: 30.5vw;
-    height: 60vh;
+    height: fit-content;
     background-color: rgba(20, 20, 20, 1);
     box-shadow: 2px 23px 36px -5px rgba(0,0,0,0.38);
 }
@@ -140,13 +142,16 @@ body, html{
     cursor: pointer;
 }
 @media only screen and (max-width: 1229px){
+    #fotoNextIntroTextDiv{
+        margin-left: 45vw;
+    }
     #textDivIntro{
         width: 45vw;
     }
     #textDivIntro *{
         margin: 14px;
-   }
-   #contentIntro{
+    }
+    #contentIntro{
         margin-left: 5vw;
     }
 }
@@ -156,17 +161,29 @@ body, html{
     }
 }
 @media only screen and (max-width: 733px){
+    #mainHomeContent{
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+        height: fit-content;
+    }
     #contentIntro{
         margin-left: 0vw;
         width: 100vw;
         display: flex;
         flex-direction: column;
         height: auto;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
     #backgroundIntro{
         opacity: 0;
     }
     #fotoNextIntroTextDiv{
+        margin-left: unset;
+        position: unset;
         height: 60vh;
         width: 70vw;
         box-shadow: none;
