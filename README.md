@@ -7,13 +7,13 @@ I updated it a little bit some time ago, creating a little express server, only 
 _Must have: [Node.Js](https://nodejs.dev/) installed_
 ##### With git clone the repository (or download and extract the zip file)
 ```bash
-git clone https://github.com/Vicg853/main_client.git
+git clone https://github.com/Vicg853/Old_portfolio.git
 cd ElectionsCVL2020
 ```
 <details>
     <summary>_In case you downloaded and extracted the Zip file_</summary>
     <p>
-        ```cd [download repository path]/main_client```
+        ```cd [download repository path]/Old_portfolio```
     </p>
 </details>
 
